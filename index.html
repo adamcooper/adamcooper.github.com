@@ -2,4 +2,19 @@
 layout: default
 ---
 
-Index page details
+<ul class="posts">
+{% for post in site.posts limit:5 %}
+  <div class="post">
+    <div class="post_details">
+      <h2><a href="{{ post.url }}">{{ post.title }}</h2>
+      <a href="{{ post.url }}" title="Permalink for this post">{{ post.date | date_to_string }}</a>
+    </div>
+    <div class="post_content">
+      {{ post.content }}
+    </div>
+    <div class="post_meta">
+    </div>
+  </div>
+{% endfor %}
+
+

@@ -1,6 +1,30 @@
 <html>
-  <body>
-    <h1>Adam Cooper</h1>
-    {% content %}
+  <head>
+    <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="/css/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 8]>
+        <link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <title>{{ page.title }}</title>
+  </head>
+  <body class="two-col">
+    <div id="container"
+      <div id="header">
+        <h1>Adam Cooper</h1>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/resume.html">Resume</a></li>
+          <li><a href="/">Thoughts</a></li>
+        </ul>
+      </div>
+      <div id="content">
+      {{ content }}
+      </div>
+      <!--<div id="sidebar">-->
+        <!--<div class="box">-->
+          <!--<h2>Who Am I</h2>-->
+        <!--</div>-->
+      <!--</div>-->
+    </div>
   </body>
 </html>
