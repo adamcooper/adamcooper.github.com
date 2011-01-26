@@ -16,6 +16,7 @@ GEM
     liquid (2.2.2)
     maruku (0.6.0)
       syntax (>= 1.0.0)
+    pygments (0.0.1.a)
     syntax (1.0.0)
 
 PLATFORMS
@@ -24,3 +25,4 @@ PLATFORMS
 DEPENDENCIES
   compass
   jekyll
+  pygments
